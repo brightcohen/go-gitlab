@@ -65,6 +65,7 @@ type MergeRequest struct {
 	Labels                    []string   `json:"labels"`
 	Description               string     `json:"description"`
 	WorkInProgress            bool       `json:"work_in_progress"`
+	Action                    string     `json:"action"`
 	Milestone                 *Milestone `json:"milestone"`
 	MergeWhenPipelineSucceeds bool       `json:"merge_when_pipeline_succeeds"`
 	MergeStatus               string     `json:"merge_status"`
