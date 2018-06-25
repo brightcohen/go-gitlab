@@ -94,7 +94,7 @@ type MergeRequest struct {
 	ForceRemoveSourceBranch  bool       `json:"force_remove_source_branch"`
 	WebURL                   string     `json:"web_url"`
 	DiscussionLocked         bool       `json:"discussion_locked"`
-	Changes                  []struct {
+	/*Changes                  []struct {
 		OldPath     string `json:"old_path"`
 		NewPath     string `json:"new_path"`
 		AMode       string `json:"a_mode"`
@@ -103,7 +103,7 @@ type MergeRequest struct {
 		NewFile     bool   `json:"new_file"`
 		RenamedFile bool   `json:"renamed_file"`
 		DeletedFile bool   `json:"deleted_file"`
-	} `json:"changes"`
+	} `json:"changes"`*/
 	TimeStats *TimeStats `json:"time_stats"`
 	Squash    bool       `json:"squash"`
 	Pipeline  struct {
